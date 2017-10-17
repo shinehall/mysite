@@ -1,0 +1,7 @@
+{% if user %}
+<p>User: {{ user.username }}</p>
+<p>Email: {{ user.email }}</p>
+<p>Last login time: {{ user.last_login }}</p>
+{% endif %}
+
+<a href="{% url 'user:user_logout' %}">logout</a>
